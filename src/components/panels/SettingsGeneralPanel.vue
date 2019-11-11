@@ -22,6 +22,9 @@
 				<v-col cols="12" sm="6">
 					<v-text-field v-model.number="cacheSaveDelay" type="number" step="any" min="0" :label="$t('panel.settingsGeneral.cacheSaveDelay', ['ms'])" hide-details></v-text-field>
 				</v-col>
+				<v-col cols="12" sm="6">
+					<v-text-field v-model.number="ledHeaterPin" type="number" step="any" min="0" :label="$t('panel.settingsGeneral.ledHeaterPin')" hide-details></v-text-field>
+				</v-col>
 			</v-row>
 		</v-card-text>
 
@@ -60,6 +63,10 @@ export default {
 		cacheSaveDelay: {
 			get() { return this.settings.cacheSaveDelay; },
 			set(value) { if (this.isNumber(value) && value >= 0) { this.update({ cacheSaveDelay: value }); } }
+		},
+		ledHeaterPin: {
+			get() { return this.settings.ledHeaterPin; },
+			set(value) { if (this.isNumber(value) && value >= 0) { this.update({ ledHeaterPin: value }); } else { this.update({ ledHeaterPin: -1 })} }
 		}
 	},
 	data() {

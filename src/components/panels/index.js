@@ -7,6 +7,7 @@ import BabysteppingPanel from './BabysteppingPanel.vue'
 import ExtrudePanel from './ExtrudePanel.vue'
 import ExtrusionFactorsPanel from './ExtrusionFactorsPanel.vue'
 import FanPanel from './FanPanel.vue'
+import LedPanel from './LedPanel.vue'
 import FansPanel from './FansPanel.vue'
 import HeightmapPanel from './HeightmapPanel.vue'
 import MovementPanel from './MovementPanel.vue'
@@ -34,6 +35,7 @@ Vue.component('babystepping-panel', BabysteppingPanel)
 Vue.component('extrude-panel', ExtrudePanel)
 Vue.component('extrusion-factors-panel', ExtrusionFactorsPanel)
 Vue.component('fan-panel', FanPanel)
+Vue.component('led-panel', LedPanel)
 Vue.component('fans-panel', FansPanel)
 Vue.component('heightmap-panel', HeightmapPanel)
 Vue.component('job-control-panel', JobControlPanel)
@@ -62,6 +64,7 @@ export default {
 	ExtrudePanel,
 	ExtrusionFactorsPanel,
 	FanPanel,
+	LedPanel,
 	FansPanel,
 	HeightmapPanel,
 	JobControlPanel,

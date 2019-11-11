@@ -18,6 +18,7 @@ export default {
 		settingsSaveDelay: 2000,						// ms - how long to wait before settings updates are saved
 		cacheStorageLocal: localStorageSupported,
 		cacheSaveDelay: 4000,							// ms - how long to wait before cache updates are saved
+		ledHeaterPin: -1,								// -1 - not connected
 		notifications: {
 			errorsPersistent: true,
 			timeout: 5000								// ms

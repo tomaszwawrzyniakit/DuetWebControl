@@ -17,6 +17,9 @@
 				<v-col cols="12">
 					<fan-panel></fan-panel>
 				</v-col>
+				<v-col cols="12">
+					<led-panel></led-panel>
+				</v-col>
 
 				<v-col v-if="state.atxPower !== null" :class="{ 'hidden-md-and-up': !state.mode || state.mode === 'FFF' }" cols="3">
 					<atx-panel></atx-panel>

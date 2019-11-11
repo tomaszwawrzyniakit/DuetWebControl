@@ -497,6 +497,9 @@ export default {
 			toolFan: 'Tool Fan',
 			fan: 'Fan {0}'
 		},
+		led: {
+			caption: 'Led Control',
+		},
 		fans: {
 			caption: 'Fans',
 			changeVisibility: 'Change Visibility',
@@ -618,7 +621,8 @@ export default {
 			settingsStorageLocal: 'Save settings in local storage',
 			settingsSaveDelay: 'Update delay for settings changes ({0})',
 			cacheStorageLocal: 'Save cache in local storage',
-			cacheSaveDelay: 'Update delay for cache changes ({0})'
+			cacheSaveDelay: 'Update delay for cache changes ({0})',
+			ledHeaterPin: 'Heater pin with connected led panel (-1 means not connected)'
 		},
 		settingsListItems: {
 			caption: 'List Items',
